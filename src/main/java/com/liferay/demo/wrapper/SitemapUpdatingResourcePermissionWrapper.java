@@ -80,7 +80,7 @@ public class SitemapUpdatingResourcePermissionWrapper extends ResourcePermission
 					log.info("including page " + layout.getName() + " in sitemap due to guest VIEW permissions");
 					props.setProperty("sitemap-include", "1");
 				} else {
-					log.info("excluding page " + layout.getName() + " in sitemap due to guest VIEW permissions");
+					log.info("excluding page " + layout.getName() + " from sitemap due to guest VIEW permissions");
 					props.setProperty("sitemap-include", "0");
 				}
 				layout.setTypeSettingsProperties(props);
